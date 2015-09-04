@@ -1,0 +1,12 @@
+# -*- mode: org ; coding: utf-8 ; truncate-lines: nil -*-
+# This work is licensed under a Creative Commons
+# Attribution-ShareAlike 4.0 International License.
+# https://creativecommons.org/licenses/by-sa/4.0/
+# 
+# co: Aktiopohjaisen ohjelmoinnin tukiryhmä, 2015--
+
+* Toiminnan esittäminen suunnittelussa
+
+Abstraktioiden ollessa rakenteisia, tulee mieleen virittää analogioita arkkitehtuurin ja tietojärjestelmien välille. Arkkitehtuurissa on lähtökohtana, että muoto ja rakenteet luovat ja muokkaavat toimintaa. Luonnollisesti saman asia tapahtuu tietokoneohjelmissa. Tietyt rakenteen mahdollistavat sille luontaisen toiminnallisuuden, mutta jos ohjelmalta vaaditaan yllättäen rakenteelle epäluonnollista toiminnallisuutta, ohjelman tekeminen muuttuu vaikeaksi ja virhealttiiksi.
+
+Toinen vaihtoehto on lähteä rakentamaan järjestelmään sen kautta, mitä järjestelmän on tarkoitus tehdä. Tätä tyylisuuntaa edustaa esimerkiksi DCI arkitehtuuri, jossa ohjelman oliot kuvataan roolien kautta ja algoritmit kirjoitetaan rooleille. Tässä mennään kuitenkin vielä pidemmälle. Ohjelman toiminta esitetään abstraktina eikä sitä liitetä tietyu

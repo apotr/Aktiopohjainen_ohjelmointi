@@ -1,0 +1,17 @@
+# -*- mode: org ; coding: utf-8 ; truncate-lines: nil -*-
+# This work is licensed under a Creative Commons
+# Attribution-ShareAlike 4.0 International License.
+# https://creativecommons.org/licenses/by-sa/4.0/
+# 
+# co: Aktiopohjaisen ohjelmoinnin tukiryhmä, 2015--
+
+* Johdanto
+
+Klassikkopaperi isojen ohjelmistoprojektien läpiviennistä on julkaistu 1970. Tuolta samalta ajalta on myös peräisin nykyisin yleisessä käytössä olevien ohjelmointikielten perustanana oleva suoritusmalli ja tapa rakentaa abstraktioita. Ohjelmointikielten suoritusmalli ja käytetyt abstraktiot on alkujaan valittu heijastamaan tietokoneiden toimintatapaa ja konekielisessä ohjelmoinnissa käytettyjä ja hyväksi havaittuja rakenteita. Toisinkin kuin ihminen ja ihmisen tapa ajatella ja jäsentää asioita, tietokoneet ovat muuttuneet merkittävästi sitten 1960-luvun.
+
+Tietokoneiden muutoksen ydin on kuvattavissa sanoilla rinnakkaisuus ja vuorovaikutus. Prosessoreissa on useita ytimiä (ennen oli vain yksi), laskentayksiköissä on useita ja mahdollisesti keskenään erilaisia prosessoreja, laskentayksiköt yhdistyvät klustereiksi, joiden toivotaan näyttävän ulospäin yhdeltä tietokoneelta, ja nämä tietokoneet vuorovaikuttavat hyödyntäen globaaleja tietoverkkoja.
+
+Sana klusteri on hieman huono ja harhaanjohtava, koska se yhdistyy helposti isoihin palvelimiin ja supertietokoneisiin. Tämän päivän yleisimmät klusterit ovat useimmin pienten tietokoneiden dynaamisia yhteenlittymiä, joita käytetään ympäristön tarkkailuun ja säätöön. Esimerkiksi nykyaikaisessa autossa saattaa olla 50 prosessoria ja 50 miljoonan rivin edestä ohjelmakoodia. Sama koskee muita liikennevälineitä, työkoneita, taloja ja tehtaita.
+
+Toinen huomionarvoinen sektori on jatkuvasti ihmisten mukana kulkevat laitteet. Niissäkin on useita prosessoreja, ne ovat kytkeytyneet tietoverkoon, tarkkailevat ympäristöä, ennakoivat kantajansa toimia ja tarpeita yms. Näiden mobiililaitteiden erityispiirre on, että ne saavat virtansa akuista ja tehonkulutuksesta tulee pullonkaula.
+

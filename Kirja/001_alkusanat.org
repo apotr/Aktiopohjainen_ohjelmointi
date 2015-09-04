@@ -1,0 +1,20 @@
+# -*- mode: org ; coding: utf-8 ; truncate-lines: nil -*-
+# This work is licensed under a Creative Commons
+# Attribution-ShareAlike 4.0 International License.
+# https://creativecommons.org/licenses/by-sa/4.0/
+# 
+# co: Aktiopohjaisen ohjelmoinnin tukiryhmä, 2015--
+
+#+BEGIN_LaTeX
+\chapter*{Alkusanat}
+#+END_LaTeX
+
+Kädessäsi on hiljainen muistomerkki asialle, joka jää usein huomaamatta ja hyödyntämättä. Aina ei tekemisen merkittävin lopputulos ole tekemisen varsinainen tavoite. Aktiopohjaista ohjelmointia ei toistaiseksi ole varsinaisesti tutkittu. Sen sijaan on tutkittu formaalia spesifiointia ja verifiointia sekä mallipohjaista testausta ja niiden mahdollisuuksia auttaa haastavien ohjelmistojen tekemisessä.
+
+Spesifiointi ja verifiointi ovat jo yli kymmenen vuotta sitten ajautuneet sivuraiteelle. Niitä käytetään vain ja ainoastaan, jos lakien mukaan on pakko tai laadukkaasti tekeminen tulee halvemmaksi kuin virheiden korjaaminen jälkikäteen. Mallipohjainen testaus sen sijaan on vielä niin uusi asia, että se on etsikkoajalla.
+
+Spesifiointia, verifiointia ja mallipohjaista testausta yhdistää mallit, joilla kuvataan toimintaa, ja nämä mallit ovat aktiopohjaisen ohjelmoinnin ydin. Niinpä tarvittava teoria periytyy kahdenkymmenen vuoden takaa ja sitä vain sovelletaan eri tavoitetta silmällä pitäen. Siinä missä spesifiointia ja verifiointia tutkittiin normaalin vesiputousmallin mukaisen kehitysprosessin rinnakkaisena polkuna, aktiopohjaisessa ohjelmoinnissa formaalit mallit on valittu keskiöön ja niitä laaditaan iteratiivisesti niinkuin ketterässä kehityksessä kuuluukin.
+
+Toinen merkittävä ero on tavoitteessa. Spesifioinnilla ja verifioinnilla tavoiteltiin ulkoista laatua eli virheettömyyttä. Aktiopohjaisessa ohjelmoinnissa keskeisiä tavoitteita ovat nopeus ja helpompi opittavuus kuin perinteisillä lausekielillä reaktiivisia ja rinnakkaisjärjestelmiä ohjelmoitaessa. Tätä tavoitetta lähestytään kahdesta suunnasta. Toiminnan kuvaamisessa käytetään luonnostaan rinnakkaisuuden huomioivaa esitystapaa, jolloin vuorovaikutuksen hallintaan ei tarvitse kiinnittää huomiota enää toteutusvaiheessa. Toinen nopeuttava tekijä on suunnitteluvaiheen mallien objektiivinen verifioitavuus, jolloin kehitysprosessin palautesilmukat lyhenevät ja testausvaiheessa löytyy vähemmän virheitä.
+
+Nopeutta ja kohtuullisempaa osaamistarvetta rinnakkaisohjelmointiin tarvitaan maailman digitalisoitumisen vuoksi. Aivan kaikki laitteet ovat liittymässä tietoverkkoon jo yksin siksi, että se on nykyteknologialla periaatteessa mahdollista. Ja kyllä aika montaa ihmistä kiehtoo triljoonan sensorin ekosysteemi jo ajatuksenakin. Näissä haaveissa ei kuitenkaan oteta kantaa, mistä otetaan resurssit kyseisen järjestelmän rakentamiseen ja miten varmistetaan, että noin laajan kokonaisuuden toiminta on toiveiden mukainen ja ettei kyseinen luomus pääse puremaan ihmiskuntaa omaan nilkkaan.

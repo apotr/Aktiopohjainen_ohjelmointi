@@ -1,0 +1,54 @@
+* Kirja: Aktiopohjaisen ohjelmoinnin perusteet
+
+** Motivoivia tekijöitä 
+
+Tämä kirja kirjoitetaan siksi, että digitalisoituvan maailman rakentajilla olisi mahdollisuus tutustua uuteen ja toivottavasti mielekkäämpään tapaan tehdä järjestelmiä. Ja on tämän kirjan takana sellainenkin haave, että ohjelmistokehitykseen tulisi pitkästä aikaa jotain uutta säpinää. Vai eikö muka nykymuotoinen ketterä koodaileminen ala jo kyllästyttää?
+
+** Kirjan yleisö ja sisältö
+
+Kirjasta tulee varsin perinteinen ohjelmoinnin oppikirja. Lähtötasoksi riittää, että osaa tehdä pieniä ohjelmia perinteisillä lausekielillä.
+
+Keskeistä sisältöä ovat atomisiin tapahtumiin eli aktioihin perustuvat tavat esittää toimintaa, toiminnan mallintamisen käytännöt ja tekniikka sekä mallien tarkistaminen ja testaaminen. Luonnollisesti kuvataan koko kehitysprosessi aina ajettavan ohjelman tuottamiseen asti.
+
+** Osallistuminen
+
+Kaikki apu on tervetullutta. Vaikket osaisikaan kirjoittaa, niin aina voit lukea ja osoittaa kirjoittajille virheitä ja vaikeaselkoisia kohtia.
+
+Toimituskunta toivoo, että heihin otetaan yhteyttä GitHubin tarjoamien toimintojen avulla. Jos tämä ei asian luonteen tai muiden syiden vuoksi ole mahdollista, tukiryhmän kotisivulta [[http://apotr.github.io]] löytyy lisää yhteystietoja.
+
+** Kirjoitusympäristö
+
+Alustavasti keskeisiksi työvälineiksi on valittu seuraavat ohjelmistot:
+
+- git :: Kunnon versionhallinta tiedostojen jakemiseen ja hallintaan.
+- GNU Emacs ja org-mode :: Aktiopohjainen ohjelmointi perustuu 20 vuotta vanhaan teoriaan ja vanhan liiton ohjelmistotieteilijöille LaTeX on ainoa kelpo väline korkealaatuisen tekstin tuottamiseen. Org-mode on valittu, koska
+  + Se ei ole syntaksiltaan yhtä haastavaa kuin LaTeX ja toivottavasti nopeampi oppia
+  + Muunnos org-modesta PDF:ksi käy LaTeX:in kautta eli lopputulos on laadukas.
+  + Org-mode tiedostoon voi luontevasti kirjoittaa LaTeX:ia, joten tarvittaessa vaativampikin taitto on mahdollinen.
+  + Org-mode on myös literate programming ympäristö, joten esimerkit saa suoraan sekä kirjaan että itsenäisiksi ohjelmiksi.
+  + GitHub ja GitLab osaa näyttää org-mode muotoista tekstiä suhteellisen sujuvasti.
+  + Org-mode tiedostot ovat tavallista utf-8 tekstiä, joten niitä voi muokata omalla lempieditorillaan. Emacs tarvitaan org-mode tiedostojen käätämisessä LaTeX:iksi ja esimerkkien lähdekoodien erotteluun, mutta sitä ei tarvitse käyttää itse, ellei halua.
+- GNU Make :: Perinteinen ja hyväksi havaittu tapa automatisoida käännöksiä eli tässä muunnos kirjan kirjoitusmuodosta PDF-tiedostoksi ja esimerkkien kääntäminen.
+
+Näitä ohjelmistoja on käytetty muissakin yhteyksissä, ja niillä saa homman varmasti tehtyä. Valinta ei kuitenkaan ole kiveen hakattu ja perustelluista syistä työkalut voidaan vaihtaa. Lisääkin välineitä tullaan tarvitsemaan, mutta valitaan niitä tarpeen mukaan.
+
+Kirjan eli tiedoston "taitettu_kirja.pdf" saa tuotettua siis sanomalla hakemistossa "Kirja" notta "make":
+#+BEGIN_SRC sh :shebang "#!/bin/bash" :results silent
+cd Kirja
+make
+#+END_SRC
+
+Jos haluaa ajaa käännöksen suoraan Emacsista, niin ensin pitää sanoa, että
+#+BEGIN_SRC emacs-lisp :results silent
+(require 'ob-sh)
+#+END_SRC
+
+** Käytetty lisenssi
+
+Kirja lisenssoidaan käyttäen Creative Commons -lisenssiä:
+#+BEGIN_QUOTE
+This work is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.
+[[https://creativecommons.org/licenses/by-sa/4.0/]]
+#+END_QUOTE
+[[Kirja/cc_by-sa_88x31.png]]

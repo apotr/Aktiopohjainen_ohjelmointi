@@ -1,0 +1,88 @@
+# -*- mode: org ; coding: utf-8 ; truncate-lines: nil ; org-latex-title-command: "" -*-
+# This work is licensed under a Creative Commons
+# Attribution-ShareAlike 4.0 International License.
+# https://creativecommons.org/licenses/by-sa/4.0/
+# 
+# co: Aktiopohjaisen ohjelmoinnin tukiryhmä, 2015--
+
+#+TITLE: Aktiopohjaisen ohjelmoinnin perusteet
+#+AUTHOR: Yhteisökirja
+#+EMAIL: 
+#+DATE:
+#+LATEX_CLASS: apotr-kirja
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LANGUAGE: fi
+#+LaTeX_HEADER: \usepackage[finnish]{babel}
+#+LaTeX_HEADER: \usepackage{geometry}
+#+LaTeX_HEADER: \geometry{a4paper,hmargin=25mm,vmargin=15mm, nohead,nofoot}
+#  LaTeX_HEADER: \setlength{\parindent}{0mm}
+#  LaTeX_HEADER: \addtolength{\parskip}{1ex}
+#+LaTeX_HEADER: \pagestyle{empty}
+#+OPTIONS: toc:nil num:t ^:{} email:nil d:nil
+
+# 
+# --------------------------------------------------------------------
+# Toistaiseksi tämä pelkkä on kirjoitusympäristön alustava toteutus ja
+# taittomallin demo. Tekstin sisältö on pelkkiä kirjoitushetkellä
+# mieleen tulleita alustavia ajatuksia.
+# --------------------------------------------------------------------
+# 
+
+#+BEGIN_LaTeX
+\noindent Toistaiseksi tämä pelkkä on kirjoitusympäristön alustava toteutus ja taittomallin demo. Tekstin sisältö on pelkkiä kirjoitushetkellä mieleen tulleita alustavia ajatuksia.
+      \vspace*{\stretch{2}}
+      \begin{center}
+        \Huge\bfseries
+        Aktiopohjaisen ohjelmoinnin perusteet\vspace{\stretch{1}}
+
+        \LARGE
+        Yhteisökirja
+
+        \normalsize
+        Aktiopohjaisen ohjelmoinnin tukiryhmä
+        \vspace*{\stretch{4}}
+        
+        \normalfont
+        \includegraphics{cc_by-sa_88x31}\\
+        This work is licensed under\\ a Creative Commons Attribution-ShareAlike 4.0 International License.
+#+END_LaTeX
+[[https://creativecommons.org/licenses/by-sa/4.0/][https://creativecommons.org/licenses/by-sa/4.0/]]
+#+BEGIN_LaTeX
+      \end{center}
+#+END_LaTeX
+
+# file:./001_alkusanat.org
+#+INCLUDE: "./001_alkusanat.org"
+
+#+BEGIN_LaTeX
+  \tableofcontents
+#+END_LaTeX
+
+# file:./010_johdanto.org
+#+INCLUDE: "./010_johdanto.org" :minlevel 1
+
+# file:./020_toiminta.org
+#+INCLUDE: "./020_toiminta.org" :minlevel 1
+
+# file:./030_toteutus.org
+#+INCLUDE: "./030_toteutus.org" :minlevel 1
+
+* Taiton apuvälineet 						   :noexport:
+
+#+name: setup_latex_class
+#+begin_src emacs-lisp :results silent :exports results
+  (progn
+    (setq org-latex-title-command "")
+    (unless (assoc "apotr-kirja" org-latex-classes )
+      (add-to-list 'org-latex-classes
+                   '("apotr-kirja"
+                     "\\documentclass{book}"
+                     ("\\chapter{%s}" . "\\chapter*{%s}")
+                     ("\\section{%s}" . "\\section*{%s}")
+                     ("\\subsection{%s}" . "\\subsection*{%s}")
+                     ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                     ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                     ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+      )
+    )
+#+end_src
